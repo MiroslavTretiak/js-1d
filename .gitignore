@@ -1,0 +1,5 @@
+// index.html
+// *.html dings visi css failai
+// .css/components/*.css galima tam tikroj vietoj
+// default ignore eilutes: node_modules, .vscode, .DS_Store .
+node_modules
