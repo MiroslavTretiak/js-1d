@@ -20,11 +20,14 @@ if (s > 0) {
     sum += s + 1;
 }
 
-const h1 = Math.floor(sum / 60 / 60);
-console.log(h1);
+let h1 = Math.floor(sum / 60 / 60);
 const m1 = Math.floor(sum / 60) - (h1 * 60);
-console.log(m1);
 const s1 = sum % 60;
+if (h1 == 24) {
+    h1 = 0;
+}
+console.log(h1);
+console.log(m1);
 console.log(s1);
 
 
