@@ -19,7 +19,7 @@ let data = fs.readFileSync("masyvas3.csv").toString().split("\r\n");
 let x = [];
 data.forEach((l) => {
     x.push(l.split(' '));
-}); ``
+});
 console.log(x);
 for (let i = 0; i < data.length; i++) {
     let s = "";
