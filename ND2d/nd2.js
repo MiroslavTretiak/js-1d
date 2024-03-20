@@ -20,3 +20,8 @@ for (const number in numbers) {
     console.log(`${number} = ${numbers[number] || 0}`);
 }
 
+/*
+const mas = Array(10).fill(0);
+data.forEach((x) => mas[x]++);
+mas.forEach((d, i) => console.log(`[${i}] => ${d}`));
+*/
