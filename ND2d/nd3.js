@@ -14,4 +14,20 @@ rezultatas atvaizduojamas ekrane:
 */
 
 const fs = require("fs");
-let data = fs.readFileSync("masyvas3.csv").toString().split("");
+let data = fs.readFileSync("masyvas3.csv").toString().split("\r\n");
+
+let x = [];
+data.forEach((l) => {
+    x.push(l.split(' '));
+}); ``
+console.log(x);
+for (let i = 0; i < data.length; i++) {
+    let s = "";
+    for (let k = 0; k < data[i].length; k++) {
+        s += `${x[k][i]}`;
+    }
+    console.log(s);
+}
+
+
+
