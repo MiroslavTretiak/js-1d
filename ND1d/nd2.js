@@ -9,7 +9,7 @@ Po to jos vyko arba turėjo vykti kas ketveri metai,
  žaidimų numerį, jei metai yra olimpiniai arba pasakykite,
  kad metai ne olimpiniai.Programa turi paprašyti įvesti metus,
  ir išvesti ar tai buvo olimpiniai metai ar ne, jei tai buvo
- olimpiniai metai programa turi taip pat išvesti ir numerį.
+ olimpiniai metai programa turi taip pat išvesti numerį.
 */
 const year = Number(process.argv[2]);
 
