@@ -21,7 +21,6 @@ const mas = [];
 const mas2 = [];
 
 data.forEach((x) => {
-    x = parseInt(x.trim());
     if (x % 2 === 0) {
         mas.push(x);
     } else

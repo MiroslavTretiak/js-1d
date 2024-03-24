@@ -8,7 +8,7 @@ Failo pavyzdys:
 */
 
 const fs = require("fs");
-let data = fs.readFileSync("masyvas1.csv").toString().split(" ");
+let data = fs.readFileSync("masyvas1.csv").toString().split(" ").map(Number);
 
 let max = 0;
 let min = 0;
