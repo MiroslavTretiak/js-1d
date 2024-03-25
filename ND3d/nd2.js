@@ -17,3 +17,20 @@ NOK kursas: 11.5
 
 150 EUR => 1725 NOK
 */
+
+async function convertCurrency(currency, amount) {
+    try {
+        let response = await fetch(`https://api.frankfurter.app/latest?from=EUR&to=${currency}`);
+        response = await response.json();
+        const rate = response.data.rate[currency];
+        const convertedAmount = (rate * amount).toFixed(2);
+        console.log(`${currency} kursas: ${rate}`);
+        console.log(`${amount} EUR => ${convertedAmount} ${currency}`);
+    } catch (error) {
+        console.error(`Error: ${error}`);
+    }
+}
+const currency = process.argv[2];
+const amount = parseFloat(process.argv[3]);
+
+convertCurrency(currency, amount);
